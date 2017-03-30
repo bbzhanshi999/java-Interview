@@ -1,8 +1,9 @@
-package designModel.observer;
+package com.designModel.observer;
 
-import designModel.observer.impl.MySubject;
-import designModel.observer.impl.Observer1;
-import designModel.observer.impl.Observer2;
+
+import com.designModel.observer.impl.MySubject;
+import com.designModel.observer.impl.Observer1;
+import com.designModel.observer.impl.Observer2;
 
 /**
  * Created by jilili on 2017/3/29.

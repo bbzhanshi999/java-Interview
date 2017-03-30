@@ -1,4 +1,4 @@
-package sort;
+package com.sort;
 
 public class SeqeunceTest {
 
@@ -40,7 +40,6 @@ public class SeqeunceTest {
         System.out.println("---冒泡排序----");
         for (int i : arr) {
             System.out.print(i + ",");
-
         }
         System.out.println("");
     }
@@ -114,7 +113,7 @@ public class SeqeunceTest {
      * 优点：稳定，简单
      * 缺点：比较次数不一定
      *
-     * @param arr
+     * @param
      */
     private static void directInsertSort(int[] a) {
         for (int i = 1; i < a.length; i++) {

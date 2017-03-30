@@ -1,4 +1,6 @@
-package designModel.observer.impl;
+package com.designModel.observer.impl;
+
+
 
 /**
  * Created by jilili on 2017/3/29.

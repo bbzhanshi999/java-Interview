@@ -1,7 +1,9 @@
-package designModel.observer.impl;
+package com.designModel.observer.impl;
 
-import designModel.observer.Observer;
-import designModel.observer.Subject;
+
+
+import com.designModel.observer.Observer;
+import com.designModel.observer.Subject;
 
 import java.util.Enumeration;
 import java.util.Vector;
@@ -9,7 +11,7 @@ import java.util.Vector;
 /**
  * Created by jilili on 2017/3/29.
  */
-public abstract class AbstractSubject implements Subject{
+public abstract class AbstractSubject implements Subject {
 
 
     protected Vector<Observer> observers = new Vector<>();
