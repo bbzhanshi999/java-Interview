@@ -1,4 +1,4 @@
-package designModel.template;
+package com.designModel.template;
 
 import org.junit.Test;
 

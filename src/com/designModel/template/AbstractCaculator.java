@@ -1,4 +1,4 @@
-package designModel.template;
+package com.designModel.template;
 
 /**
  * Created by jilili on 2017/3/29.
