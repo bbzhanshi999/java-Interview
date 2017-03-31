@@ -1,6 +1,7 @@
 package com.designModel.singleton;
 
 /**
+ * 懒汉式单例
  * Created by Administrator on 2017/3/27 0027.
  */
 public class Singleton {
