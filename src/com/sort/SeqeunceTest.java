@@ -27,13 +27,13 @@ public class SeqeunceTest {
      */
     public static void bubbleSort(int[] arr) {
 
-        for (int a = 1; a < arr.length; a++) {
-            int temp = arr[a];
-            for (int b = 0; b < a; b++) {
-                if (arr[b] > temp) {
-                    temp = arr[b];
-                    arr[b] = arr[a];
-                    arr[a] = temp;
+        for (int a = 1; a < arr.length-1; a++) {
+            for (int b = 0; b <= arr.length-1-a; b++) {
+                int temp;
+                if (arr[b] > arr[b+1]) {
+                    temp = arr[b+1];
+                    arr[b+1] = arr[b];
+                    arr[b] = temp;
                 }
             }
         }
@@ -109,7 +109,7 @@ public class SeqeunceTest {
     }
 
     /**
-     * 直接插入排序法：将已经排序好的数组中的一部分设为排序组，让后将之后的元素纳入进已排序数组，然后继续排序，直至左后一个元素纳入有序组排序完成
+     * 直接插入排序法：将已经排序好的数组中的一部分设为排序组，让后将之后的元素纳入进已排序数组，然后继续排序，直至最后一个元素纳入有序组排序完成
      * 优点：稳定，简单
      * 缺点：比较次数不一定
      *
