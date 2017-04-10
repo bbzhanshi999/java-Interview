@@ -3,7 +3,7 @@ package com.thread.threadPool;
 import java.util.LinkedList;
 
 /**
- * 简单线程池
+ * 简单线程池实现
  * Created by Administrator on 2017/4/6 0006.
  */
 public class MyThreadPool extends ThreadGroup{
@@ -34,6 +34,11 @@ public class MyThreadPool extends ThreadGroup{
         }
     }
 
+    /**
+     * 一个阻塞方法，工作线程不断调用此方法，从线程池中获得提交的任务，然后执行
+     * @return
+     * @throws InterruptedException
+     */
     protected synchronized Runnable getTask() throws InterruptedException {
         while(workQueue.size() == 0){
             if(isClosed){
